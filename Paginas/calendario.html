@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="../css/contenidos.css">
+    <link rel="stylesheet" href="../css/calendario.css">
+  </head>
+  
+ 
+
+<body id="body">
+    <header>
+        <div class="nav-background">
+            <nav class="navegacion-principal contenedor sombreado">
+                <a href="../index.html">
+                    <img class="logo" src="../img/Logo.png" alt="logoTipo">
+                </a>
+                
+                <div class="search">
+                    <label for="buscador-opciones"></label>
+                    <input class="search-input" type="search" placeholder="Buscar" list="buscador-historial" id="buscador-opciones">
+                    
+                    <datalist id="buscador-historial">
+                        <option value="JavaScript"></option>
+                        <option value="HTML5"></option>
+                        <option value="CSS"></option>
+                    </datalist>
+                </div>
+                
+                <div class="menu-derecha">
+                    <div>
+                        <div><a href="../Paginas/contacto.html">Contacto</a></div>
+                        <div><a href="../Paginas/calendario.html">Calendario</a></div>
+                        <div><a href="../Paginas/giftcard.html">GiftCard</a></div>
+                        <div><a href="../Paginas/formulario.html">Formulario</a></div>
+                    </div>
+                    
+                      <button id="btn-cerrar-sesion" style="display:none;" class="btn-cerrar-sesion">
+                        Cerrar Sesión
+                    </button>
+
+
+                    <div class="carrito">
+                        <a href="../Paginas/carrito.html">
+                            <img class="logo" src="../img/carrito-de-compras (1).png" alt="logoCarrito">
+                        </a>
+                        <span class="unidades" id="preview-unidades">5</span>
+                    </div>
+
+                    <div class="logo-usuario">
+                        <a href="../Paginas/perfil.html">
+                            <img class= "logo" src="../img/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.png" alt="logo-usuario">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+  <main class="calendario">
+    <h1 class="titulo-inicio">Calendario de Próximos Cursos</h1>
+
+    <div class="calendario-header">
+      <div class="dia-calendario-domingo">DOM</div>
+      <div class="dia-calendario">LUN</div>
+      <div class="dia-calendario">MAR</div>
+      <div class="dia-calendario">MIÉ</div>
+      <div class="dia-calendario">JUE</div>
+      <div class="dia-calendario">VIE</div>
+      <div class="dia-calendario-sabado">SÁB</div>
+    </div>
+
+    <div class="calendario-grid">
+      <div class="dia"><span>1</span></div>
+      <div class="dia"><span>2</span></div>
+      <div class="dia"><span>3</span></div>
+      <div class="dia"><span>4</span></div>
+      <div class="dia"><span>5</span></div>
+      <div class="dia"><span>6</span></div>
+      <div class="dia"><span>7</span></div>
+      <div class="dia"><span>8</span></div>
+      <div class="dia"><span>9</span></div>
+      <div class="dia"><span>10</span></div>
+      <div class="dia"><span>11</span></div>
+      <div class="dia evento">
+        <span>12</span>
+        <button class="boton-calendario" name="boton-accion">Insc. Cursos JavaScript</button>
+      </div>
+      <div class="dia"><span>13</span></div>
+      <div class="dia"><span>14</span></div>
+      <div class="dia"><span>15</span></div>
+      <div class="dia"><span>16</span></div>
+      <div class="dia"><span>17</span></div>
+      <div class="dia"><span>18</span></div>
+      <div class="dia evento">
+        <span>19</span>
+        <button class="boton-calendario" name="boton-accion">Insc. Cursos HTML y CSS</button>
+      </div>
+      <div class="dia"><span>20</span></div>
+      <div class="dia"><span>21</span></div>
+      <div class="dia"><span>22</span></div>
+      <div class="dia"><span>23</span></div>
+      <div class="dia"><span>24</span></div>
+      <div class="dia evento">
+        <span>25</span>
+        <button class="boton-calendario" name="boton-accion">Insc. Cursos Python</button>
+      </div>
+      <div class="dia"><span>26</span></div>
+      <div class="dia"><span>27</span></div>
+      <div class="dia"><span>28</span></div>
+    </div>
+  </main>
+
+  <div id="modal-container" class="modal-container">
+    <div class="modal">
+      <span id="close" class="close">&times;</span>
+      <h2 id="titulo-popup"></h2>
+      <p id="descripcion-popup"></p>
+      <a id="vinculo" href="../Paginas/detalle_curso.html" class="boton-popup">Ver Detalle / Comprar</a>
+    </div>
+  </div>
+
+  <footer class="footer-principal">
+        <div class="footer-contenedor">
+            <div class="footer-seccion acerca">
+                <h2>INTEGRANTES</h2>
+                <li>Favarolo Agustin</li>
+                <li>Lopez Abigail Ruth</li>
+                <li>Malagreca Tobias</li>
+                <li>Guerrero Nahuel</li>
+                <li>Peralta Ariel</li>
+            </div>
+            
+            <div class="footer-seccion menu">
+                <h2>MENU</h2>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../Paginas/contacto.html">Contacto</a></li>
+                <li><a href="../Paginas/calendario.html">Calendario</a></li>
+                <li><a href="../Paginas/giftcard.html">Giftcard</a></li>
+                <li><a href="../Paginas/formulario.html">Formulario</a></li>
+            </div>
+            
+            <div class="footer-seccion social">
+                <h2>REDES SOCIALES</h2>
+                <a href="#" class="social-icon"><img src="../img/facebook-icon.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="../img/twitter-icon.png" alt="Twitter"></a>
+                <a href="#" class="social-icon"><img src="../img/instragram-icon.jpeg" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+  <script src="../JS/contadorCarrito.js"></script>
+  <script src="../JS/calendario.js" ></script>
+  <script src="../JS/usuarios.js"></script>
+  
+</body>
+</html>

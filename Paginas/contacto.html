@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/contenidos.css">
+</head>
+
+
+<body id="body">
+    <header>
+        <div class="nav-background">
+            <nav class="navegacion-principal contenedor sombreado">
+                <a href="../index.html">
+                    <img class="logo" src="../img/Logo.png" alt="logoTipo">
+                </a>
+                
+                <div class="search">
+                    <label for="buscador-opciones"></label>
+                    <input class="search-input" type="search" placeholder="Buscar" list="buscador-historial" id="buscador-opciones">
+                    
+                    <datalist id="buscador-historial">
+                        <option value="JavaScript"></option>
+                        <option value="HTML5"></option>
+                        <option value="CSS"></option>
+                    </datalist>
+                </div>
+                
+                <div class="menu-derecha">
+                    <div>
+                        <div><a href="../Paginas/contacto.html">Contacto</a></div>
+                        <div><a href="../Paginas/calendario.html">Calendario</a></div>
+                        <div><a href="../Paginas/giftcard.html">GiftCard</a></div>
+                        <div><a href="../Paginas/formulario.html">Formulario</a></div>
+                    </div>
+                    
+                      <button id="btn-cerrar-sesion" style="display:none;" class="btn-cerrar-sesion">
+                        Cerrar Sesión
+                    </button>
+
+
+                    <div class="carrito">
+                        <a href="../Paginas/carrito.html">
+                            <img class="logo" src="../img/carrito-de-compras (1).png" alt="logoCarrito">
+                        </a>
+                        <span class="unidades" id="preview-unidades">5</span>
+                    </div>
+
+                    <div class="logo-usuario">
+                        <a href="../Paginas/perfil.html">
+                            <img class= "logo" src="../img/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.png" alt="logo-usuario">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="contenedor-contacto_principal">
+        
+        <div class="contenedor-contacto_datos">
+            <p>+54 9 11 1234-5678</p>
+            <p>cursosudemy@gmail.com</p>
+            <p>Horarios de atención<br>
+                <p>Lunes a viernes de 10:00 a 19:00hs.
+                    <p>Sábados de 10:00 a 14:00hs.</p>
+                </p>
+            </div>
+            
+            <form id="formulario" class="contenedor-mensaje" action="../Paginas/index.html" method="get">
+                <label for="Nombre">Nombre</label>
+                <input type="text" id="Nombre" name="Nombre" placeholder="Ingresa tu nombre" required>
+                
+                <label for="Apellido">Apellido</label>
+                <input type="text" id="Apellido" name="Apellido" placeholder="Ingresa tu Apellido" required>
+                
+                <label for="Email">Correo electrónico</label>
+                <input type="email" id="Email" name="Email" placeholder="Ingrese tu correo electrónico" required>
+                
+                <label for="Telefono">Teléfono</label>
+                <input type="text" id="Telefono" name="Telefono" placeholder="Ingrese tu teléfono" >
+                
+                <label for="Mensaje">Mensaje</label>
+                <textarea name="Mensaje" id="consulta" cols="30" rows="10" placeholder="Mensaje" maxlength="1000" required></textarea>
+                
+                <p id="contador-caracteres"> 0 / 1000 caracteres</p>
+
+                <button type="submit" class="boton-enviar">Enviar Formulario</button>
+            </form>
+        </div>
+        
+        <div>
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13125.456632530742!2d-58.5628052!3d-34.6707576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses-419!2sar!4v1727198851886!5m2!1ses-419!2sar"  
+            style="border:0;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+            class="google-maps"></iframe>
+        </div>
+    </body>
+    </html>
+    
+    
+    <footer class="footer-principal">
+        <div class="footer-contenedor">
+            
+            <div class="footer-seccion acerca">
+                <h2>INTEGRANTES</h2>
+                
+                
+                <li>Favarolo Agustin</li>
+                <li>Lopez Abigail Ruth</li>
+                <li>Malagreca Tobias</li>
+                <li>Guerrero Nahuel</li>
+                <li>Peralta Ariel</li>
+                
+                
+                
+            </div>
+            
+            
+            <div class="footer-seccion menu">
+                <h2>MENU</h2>
+            
+              
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../Paginas/contacto.html">Contacto</a></li>
+                <li><a href="../Paginas/calendario.html">Calendario</a></li>
+                <li><a href="../Paginas/giftcard.html">Giftcard</a></li>
+                <li><a href="../Paginas/formulario.html">Formulario</a></li>
+                
+            </div>
+            
+            <div class="footer-seccion social">
+                <h2>REDES SOCIALES</h2>
+                <a href="#" class="social-icon"><img src="../img/facebook-icon.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="../img/twitter-icon.png" alt="Twitter"></a>
+                <a href="#" class="social-icon"><img src="../img/instragram-icon.jpeg" alt="Instagram"></a>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+    <script src="../JS/contadorCarrito.js" ></script>
+    <script src="../JS/contacto.js"></script>
+      <script src="../JS/usuarios.js"></script>
+
+</html>

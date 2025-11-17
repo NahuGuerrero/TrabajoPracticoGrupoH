@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="../css/carrito.css">
+  <link rel="stylesheet" href="../css/contenidos.css">
+</head>
+
+
+<body id="body">
+    <header>
+        <div class="nav-background">
+            <nav class="navegacion-principal contenedor sombreado">
+                <a href="../index.html">
+                    <img class="logo" src="../img/Logo.png" alt="logoTipo">
+                </a>
+                
+                <div class="search">
+                    <label for="buscador-opciones"></label>
+                    <input class="search-input" type="search" placeholder="Buscar" list="buscador-historial" id="buscador-opciones">
+                    
+                    <datalist id="buscador-historial">
+                        <option value="JavaScript"></option>
+                        <option value="HTML5"></option>
+                        <option value="CSS"></option>
+                    </datalist>
+                </div>
+                
+                <div class="menu-derecha">
+                    <div>
+                        <div><a href="../Paginas/contacto.html">Contacto</a></div>
+                        <div><a href="../Paginas/calendario.html">Calendario</a></div>
+                        <div><a href="../Paginas/giftcard.html">GiftCard</a></div>
+                        <div><a href="../Paginas/formulario.html">Formulario</a></div>
+                    </div>
+                    
+                      <button id="btn-cerrar-sesion" style="display:none;" class="btn-cerrar-sesion">
+                        Cerrar Sesión
+                    </button>
+
+
+                    <div class="carrito">
+                        <a href="../Paginas/carrito.html">
+                            <img class="logo" src="../img/carrito-de-compras (1).png" alt="logoCarrito">
+                        </a>
+                        <span class="unidades" id="preview-unidades">5</span>
+                    </div>
+
+                    <div class="logo-usuario">
+                        <a href="../Paginas/perfil.html">
+                            <img class= "logo" src="../img/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.png" alt="logo-usuario">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+  
+  <main>
+    <h1 class="titulo-inicio">TU CARRITO DE COMPRAS</h1>
+    
+    <div class="curso-info">
+      <div class="curso-foto">
+        <a href="../Paginas/detalle_curso.html">
+          <img src="../img/curso_js.png" alt="Curso JavaScript">
+        </a>
+      </div>
+      
+      <div class="curso-detalle">
+        <h2 class="curso-detalle-titulo">CURSO DE JAVASCRIPT</h2>
+        <p><strong>Precio:</strong> $24.99</p>
+        <p></p>
+        <p><strong>Descripción:</strong> Aprende JavaScript desde cero y</p>
+        <p>crea tus propias aplicaciones web interactivas.</p>
+      </div>
+    </div>
+    
+    <div class="total">
+      <span class="texto-apagar"><strong>Total a pagar:</strong></span>
+      <span class="texto-apagar2"><strong>$24.99</strong></span>
+    </div>
+    
+    <div class="btn-pago-wrapper">
+      <a href="../index.html" class="btn-pago">Pagar</a>
+    </div>
+  </main>
+  
+  <footer class="footer-principal">
+    <div class="footer-contenedor">
+      <div class="footer-seccion acerca">
+        <h2>INTEGRANTES</h2>
+        <li>Favarolo Agustin</li>
+        <li>Lopez Abigail Ruth</li>
+        <li>Malagreca Tobias</li>
+        <li>Guerrero Nahuel</li>
+        <li>Peralta Ariel</li>
+      </div>
+      
+      <div class="footer-seccion menu">
+        <h2>MENÚ</h2>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="calendario.html">Calendario</a></li>
+        <li><a href="giftcard.html">Giftcard</a></li>
+        <li><a href="formulario.html">Formulario</a></li>
+      </div>
+      
+      <div class="footer-seccion social">
+        <h2>REDES SOCIALES</h2>
+        <a href="#" class="social-icon"><img src="../img/facebook-icon.png" alt="Facebook"></a>
+        <a href="#" class="social-icon"><img src="../img/twitter-icon.png" alt="Twitter"></a>
+        <a href="#" class="social-icon"><img src="../img/instragram-icon.jpeg" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+  <script src="../JS/contadorCarrito.js" ></script>
+    <script src="../JS/usuarios.js"></script>
+
+</html> 
