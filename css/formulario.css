@@ -1,0 +1,495 @@
+/* ──────────────── ESTRUCTURA GENERAL ──────────────── */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* ──────────────── HEADER / NAVEGACIÓN ──────────────── */
+
+.nav-background {
+  background: #004085;
+  padding: 0.5rem 0;
+}
+
+.navegacion-principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  width: 10rem;
+  float: left;
+}
+
+.menu-derecha {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.carrito {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 0.5rem;
+}
+
+.carrito img {
+  width: 100%;
+  height: 100%;
+}
+
+.unidades {
+  position:absolute;
+  background: #d3d3d3;
+  color: black;
+  padding: 0 1em;
+  font-size: 1em;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+
+.unidades:hover {
+  transform: scale(1.2);
+}
+
+.search {
+  position: relative;
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #007bff;
+}
+
+/* ──────────────── FORMULARIO / INSCRIPCIÓN ──────────────── */
+
+main {
+  margin-top: 5.5rem;
+}
+
+.formulario-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.inscripcion {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inscripcion h1 {
+  margin-bottom: 1rem;
+}
+
+.titulo-curso {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.fila-inscripcion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.fila-inscripcion input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.boton-eliminar {
+  background: #ccc;
+  border: none;
+  font-size: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.boton-agregar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  padding: 0.6rem 1rem;
+  background: #f1f1f1;
+  border: 1px solid #aaa;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.precio-inscripcion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.precio {
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.boton-inscribirse {
+  background: #004085;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.boton-inscribirse:hover {
+  background: #0069d9;
+}
+
+.tipo-inscripcion {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.boton-eliminar {
+  background-color: #ff4444;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  width: 30px;
+  height: 30px;
+  transition: background-color 0.3s;
+}
+
+.boton-eliminar:hover {
+  background-color: #cc0000;
+}
+
+.boton-agregar {
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton-agregar:hover {
+  background-color: #005fa3;
+}
+
+
+/* ──────────────── CURSOS / INFORMACIÓN EXTRA ──────────────── */
+
+.alumnos-container {
+  margin-bottom: 2rem;
+}
+
+.Java {
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  gap: 5em;
+}
+
+.barra_insc {
+  margin-bottom: 0.5rem;
+}
+
+.input-error {
+    border: 2px solid red !important;
+    background: #ffebeb;
+}
+
+.barra_insc-input,
+select {
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+.barra_insc-input:focus,
+select:focus {
+  outline: 2px solid #4c8bf5;
+}
+
+h2 {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.infomracion_cursos {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.fondo-negro-contenedor {
+  flex: 1;
+  min-width: 200px;
+}
+
+.fondo-negro {
+  background: #007bff;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.desarrolladores {
+  flex: 2;
+  background: #555;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 0;
+}
+
+.nombre--titulo,
+.dni--titulo {
+  font-weight: bold;
+}
+
+/* ──────────────── MEDIOS DE PAGO ──────────────── */
+
+.medios-pago {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.imagen-pago {
+  width: 50px;
+  height: auto;
+}
+
+/* ──────────────── CURSOS RELACIONADOS ──────────────── */
+
+.cursos-disponibles {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  border: 0.1em solid #ccc;
+  border-radius: 0.5em;
+  overflow: hidden;
+  width: 25%;
+  margin: 1em;
+  box-shadow: 0 0.3em 0.5em rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.curso-imagen {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.curso-contenido {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.curso-titulo {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.curso-descipcion {
+  font-size: 1em;
+  color: #555;
+}
+
+.curso-boton {
+  display: inline-block;
+  text-align: center;
+  padding: 0.5em 1em;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.3em;
+  font-size: 1em;
+}
+
+.curso-boton:hover {
+  background-color: #0056b3;
+}
+
+/* ──────────────── FOOTER ──────────────── */
+
+footer {
+  background-color: #d3d3d3;
+}
+
+.footer-contenedor {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-social {
+  width: 20%;
+}
+
+.footer-menu {
+  width: 30%;
+}
+
+.footer-datos {
+  width: 30%;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-social img {
+  width: 5%;
+  height: auto;
+}
+
+/* ──────────────── RESPONSIVE ──────────────── */
+
+@media (max-width: 768px) {
+  .menu-horizontal {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 30em) {
+  body {
+    font-size: 70%;
+  }
+
+  .navegacion-principal {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+  }
+
+  .search {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contenedor-contacto h1 {
+    font-size: 2em;
+  }
+
+  .contenedor-contacto_principal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor-contacto_datos,
+  .contenedor-mensaje {
+    width: 90%;
+    margin: 1rem 0;
+  }
+
+  .imagen-pago {
+    width: 25%;
+  }
+
+  .inscripcion {
+    width: auto;
+    height: auto;
+    margin-top: 10em;
+    align-items: center;
+  }
+
+  .fila-inscripcion {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  body {
+    font-size: 100%;
+  }
+
+  .navegacion-principal {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .search {
+    width: 60%;
+    margin: 0 2rem;
+  }
+
+  .giftcard-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contenedor-contacto_principal {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .contenedor-contacto_datos,
+  .contenedor-mensaje {
+    width: 45%;
+    margin: 2rem;
+  }
+}
