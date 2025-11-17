@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="../CSS/contenidos.css"> 
+    <link rel="stylesheet" href="../css/sidebar.css">
+</head>
+
+<body id="body">
+    <header>
+        <div class="nav-background">
+            <nav class="navegacion-principal contenedor sombreado">
+                <a href="../index.html">
+                    <img class="logo" src="../img/Logo.png" alt="logoTipo">
+                </a>
+                
+                <div class="search">
+                    <label for="buscador-opciones"></label>
+                    <input class="search-input" type="search" placeholder="Buscar" list="buscador-historial" id="buscador-opciones">
+                    
+                    <datalist id="buscador-historial">
+                        <option value="JavaScript"></option>
+                        <option value="HTML5"></option>
+                        <option value="CSS"></option>
+                    </datalist>
+                </div>
+                
+                <div class="menu-derecha">
+                    <div>
+                        <div><a href="../Paginas/contacto.html">Contacto</a></div>
+                        <div><a href="../Paginas/calendario.html">Calendario</a></div>
+                        <div><a href="../Paginas/giftcard.html">GiftCard</a></div>
+                        <div><a href="../Paginas/formulario.html">Formulario</a></div>
+                    </div>
+                    
+                    
+
+
+                    <div class="carrito">
+                        <a href="../Paginas/carrito.html">
+                            <img class="logo" src="../img/carrito-de-compras (1).png" alt="logoCarrito">
+                        </a>
+                        <span class="unidades" id="preview-unidades">5</span>
+                    </div>
+
+                    <div class="logo-usuario">
+                        <a href="../Paginas/perfil.html">
+                            <img class= "logo" src="../img/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.png" alt="logo-usuario">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="contenedor sombreado" style="margin-top: 5rem;"> 
+            <div class="login-card" style="padding: 2rem; max-width: 450px; margin: 2rem auto; text-align: left;">
+                <h2>Información del Usuario</h2>
+                
+                <p><strong>Nombre:</strong> <span id="perfil-nombre">Cargando...</span></p>
+                <p><strong>Email:</strong> <span id="perfil-email">Cargando...</span></p>
+                
+                <hr style="margin: 1.5rem 0;">
+
+                <div class="opciones-perfil" style="display: flex; flex-direction: column; gap: 1rem;">
+                    <button id="btn-cerrar-sesion" class="boton-aceptar"> 
+                        Cerrar Sesión
+                    </button>
+                    
+                    <button id="btn-eliminar-cuenta" class="boton-aceptar" style="background-color: #ff4444;">
+                        Eliminar Cuenta
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+<script src="../JS/perfil.js"></script>
+<script src="../JS/usuarios.js"></script>
+    
+</body>
+<footer class="footer-principal">
+        <div class="footer-contenedor">
+            <div class="footer-seccion acerca">
+                <h2>INTEGRANTES</h2>
+                <li>Favarolo Agustin</li>
+                <li>Lopez Abigail Ruth</li>
+                <li>Malagreca Tobias</li>
+                <li>Guerrero Nahuel</li>
+                <li>Peralta Ariel</li>
+            </div>
+            
+            <div class="footer-seccion menu">
+                <h2>MENU</h2>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../Paginas/contacto.html">Contacto</a></li>
+                <li><a href="../Paginas/calendario.html">Calendario</a></li>
+                <li><a href="../Paginas/giftcard.html">Giftcard</a></li>
+                <li><a href="../Paginas/formulario.html">Formulario</a></li>
+            </div>
+            
+            <div class="footer-seccion social">
+                <h2>REDES SOCIALES</h2>
+                <a href="#" class="social-icon"><img src="../img/facebook-icon.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="../img/twitter-icon.png" alt="Twitter"></a>
+                <a href="#" class="social-icon"><img src="../img/instragram-icon.jpeg" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <aside id="sidebar-carrito" class="sidebar-carrito">
+        <div class="sidebar-header">
+            <h2>Mis Cursos</h2>
+            <span id="cerrar-sidebar" class="cerrar-sidebar">&times;</span>
+        </div>
+
+        <div id="contenido-carrito" class="contenido-carrito"></div>
+
+        <div class="sidebar-footer">
+            <p id="total-carrito">Total: $0</p>
+        </div>
+    </aside>
+</html>

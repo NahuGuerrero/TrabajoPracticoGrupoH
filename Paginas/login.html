@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="../css/contenidos.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body id="body">
+    <header>
+        <div class="nav-background">
+            <nav class="navegacion-principal contenedor sombreado">
+                <a href="../index.html">
+                    <img class="logo" src="../img/Logo.png" alt="logoTipo">
+                </a>
+                
+                <div class="search">
+                    <label for="buscador-opciones"></label>
+                    <input class="search-input" type="search" placeholder="Buscar" list="buscador-historial" id="buscador-opciones">
+                    
+                    <datalist id="buscador-historial">
+                        <option value="JavaScript"></option>
+                        <option value="HTML5"></option>
+                        <option value="CSS"></option>
+                    </datalist>
+                </div>
+                
+                <div class="menu-derecha">
+                    <div>
+                        <div><a href="../Paginas/contacto.html">Contacto</a></div>
+                        <div><a href="../Paginas/calendario.html">Calendario</a></div>
+                        <div><a href="../Paginas/giftcard.html">GiftCard</a></div>
+                        <div><a href="../Paginas/formulario.html">Formulario</a></div>
+                    </div>
+                    
+                      <button id="btn-cerrar-sesion" style="display:none;" class="btn-cerrar-sesion">
+                        Cerrar Sesión
+                    </button>
+
+
+                    <div class="carrito">
+                        <a href="../Paginas/carrito.html">
+                            <img class="logo" src="../img/carrito-de-compras (1).png" alt="logoCarrito">
+                        </a>
+                        <span class="unidades" id="preview-unidades">5</span>
+                    </div>
+
+                    <div class="logo-usuario">
+                        <a href="../Paginas/perfil.html">
+                            <img class= "logo" src="../img/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.png" alt="logo-usuario">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+<div class="caja-login">
+    <main class = "usuario-main">
+        <h1>Iniciar Sesion</h1>
+        <form id="form-login">
+            <label>Email</label>
+            <input type="email" id="login-email" required>
+            <label>Contraseña</label>
+            <input type="password" id="login-password" required>
+            <button type="submit">Ingresar</button>
+        </form>
+        <p>¿No tenes CUENTA? <a href="register.html">Registrate AQUI</a></p> 
+    
+    </main>
+</div>
+    <script src="../JS/contadorCarrito.js"></script>
+    <script src="../JS/usuarios.js"></script>
+</body>
+</html>
