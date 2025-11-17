@@ -1,0 +1,667 @@
+/* ──────────────── ESTRUCTURA GENERAL ──────────────── */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background: #f9f9f9;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+input[list]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+/* ──────────────── HEADER / NAVEGACIÓN ──────────────── */
+
+header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #007bff;
+}
+
+.nav-background {
+  background-color: #004085;
+  padding: 0.5rem 0;
+}
+
+.navegacion-principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 0.5rem;
+}
+
+.navegacion-principal a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.logo-usuario {
+  width: 4rem;
+  height: 4rem;
+  
+}
+
+.logo-usuario img {
+    width: 100%;
+  height: 100%;
+}
+
+.menu-derecha {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.carrito {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 0.5rem;
+}
+
+.carrito img {
+  width: 100%;
+  height: 100%;
+}
+
+.unidades {
+  position:absolute;
+  background: #d3d3d3;
+  color: black;
+  padding: 0 1em;
+  font-size: 1em;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+
+.unidades:hover {
+  transform: scale(1.2);
+}
+
+.search {
+  position: relative;
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+}
+
+/* ──────────────── MAIN / CONTENIDO PRINCIPAL ──────────────── */
+
+main {
+  flex: 1;
+  padding: 20px;
+  margin-top: 5.5rem;
+}
+
+main > * {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.curso {
+  margin: 1rem;
+  padding-top: 1.5rem;
+}
+
+.curso-info {
+  display: flex;
+  align-items: start;
+  padding-top: 6rem;
+  flex-wrap: wrap;
+}
+
+.curso-foto img {
+  width: 22rem;
+  height: auto;
+  border-radius: 8px;
+}
+
+.curso-detalle {
+  max-width: 500px;
+}
+
+.curso-detalle-titulo {
+  font-size: 1.9rem;
+  margin-top: 1rem;
+  margin-bottom: -0.5rem;
+}
+
+.btn-inscribirse {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.1s;
+}
+
+.btn-inscribirse:hover {
+  background-color: #636363;
+}
+
+/* ──────────────── SECCIÓN CONTENIDOS / DOCENTE ──────────────── */
+
+.contenidos {
+  margin-bottom: 40px;
+}
+
+.acordeon details {
+  margin-bottom: 10px;
+  background: #b2c6ff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.docente-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: #b2c6ff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.docente-info img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ──────────────── CURSOS DISPONIBLES ──────────────── */
+
+h2 {
+  text-align: center;
+}
+
+.cursos-disponibles {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tarjeta,
+.tarjeta-cursos {
+  display: flex;
+  flex-direction: column;
+  border: 0.1em solid #ccc;
+  border-radius: 1em;
+  background-color: white;
+  box-shadow: 0 0.3em 0.5em rgba(0, 0, 0, 0.1);
+  margin: 1em;
+  padding: 1em;
+}
+
+.tarjeta {
+  overflow: hidden;
+  width: 25%;
+  border-radius: 0.5em;
+}
+
+.tarjeta-cursos {
+  flex: 1 1 15rem;
+  max-width: 25rem;
+  min-width: 10rem;
+}
+
+.curso-imagen {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.curso-contenido {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.curso-titulo {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.curso-descipcion {
+  font-size: 1em;
+  color: #555;
+}
+
+.curso-boton {
+  display: inline-block;
+  text-align: center;
+  padding: 0.5em 1em;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.3em;
+  font-size: 1em;
+}
+
+.curso-boton:hover {
+  background-color: #0056b3;
+}
+
+/* ─────────────── CONTENEDOR GENERAL ─────────────── */
+.medios-pago-contenedor {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.medios-pago-titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: rgb(0, 0, 0)000;
+}
+
+/* ─────────────── CARRUSEL ─────────────── */
+.medios-pago {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+/* Ventana donde se muestra el logo */
+.medios-pago-ventana {
+  overflow: hidden;
+  width: 180px;   /* ← AGRANDADO */
+  height: 120px;  /* ← AGRANDADO */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor de logos */
+.medios-pago-track {
+  display: flex;
+  align-items: center;
+}
+
+/* Imagen de cada medio */
+.medios-pago-track img {
+  width: 140px;   /* ← AGRANDADO */
+  height: auto;
+  object-fit: contain;
+  display: none;
+  transition: transform 0.25s ease;
+}
+
+.medios-pago-track img.activo {
+  display: block;
+}
+
+.medios-pago-track img.activo:hover {
+  transform: scale(1.15);
+}
+
+/* Botones laterales */
+.pago-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.pago-btn img {
+  width: 40px;   /* ← AGRANDADO */
+  height: auto;
+}
+
+
+
+
+/* ──────────────── FOOTER ──────────────── */
+
+footer {
+  background-color: #d3d3d3;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-principal {
+  background-color: #004085;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.footer-contenedor {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.footer-seccion {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-seccion h2,
+.footer-seccion p,
+.footer-seccion li,
+.footer-seccion li a {
+  color: rgb(255, 255, 255);
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+.social-icon {
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.social-icon img {
+  border-radius: 1rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.footer-social img {
+  width: 5%;
+  height: auto;
+}
+
+/* ──────────────── SLIDER ──────────────── */
+.slider {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background-color: #D5E7F2;
+  color: #000000;
+  padding-bottom: 10px;
+}
+
+.slides {
+  position: relative;
+  height: 400px;
+}
+
+
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Ajusta la imagen sin deformarla */
+  display: none;      /* Solo se muestra la activa */
+}
+
+
+.slide.active {
+  display: block;
+}
+
+
+.controles {
+  position: absolute;          /* Los colocamos dentro del slider */
+  bottom: 20px;                /* Un poco arriba del borde inferior */
+  left: 50%;                   /* Centramos horizontalmente */
+  transform: translateX(-50%); /* Ajuste perfecto al centro */
+
+  display: flex;               /* Usamos flexbox para centrar los puntos */
+  justify-content: center;     /* Centrado horizontal */
+  align-items: center;         /* Centrado vertical */
+  gap: 8px;                    /* Separación entre puntos */
+}
+
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #003b60;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+
+.dot.active {
+  background-color: #0081d1;
+  transform: scale(1.4); /* Aumenta el tamaño 40% sin romper el flujo */
+}
+
+/* ──────────────── PASOS / INSCRIPCIÓN ──────────────── */
+
+.pasos-inscripcion {
+  max-width: 1200px;
+  margin: 40px auto 20px;
+  padding: 0 16px;
+}
+
+.pasos-titulo {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 0.3px;
+}
+
+.pasos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.paso {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 16px;
+  box-shadow: 0.6rem 0.6rem 0.6rem 0.6rem rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.paso:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0.6rem 0.6rem 0.6rem 0.6rem rgba(0, 0, 0, 0.15);
+}
+
+.paso img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.paso h3 {
+  font-size: 1.05rem;
+  margin: 6px 0 4px;
+}
+
+.paso p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ──────────────── MODAL FELICITACIÓN ──────────────── */
+.modal-felicitacion {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contenido {
+  background-color: #fff;
+  padding: 25px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  text-align: center;
+  max-width: 400px;
+  animation: aparecer 0.4s ease;
+}
+
+@keyframes aparecer {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.cerrar-modal {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
+.boton-aceptar {
+  margin-top: 15px;
+  padding: 10px 25px;
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton-aceptar:hover {
+  background-color: #005fa3;
+}
+/* Estilo general para el botón de cerrar sesión */
+.btn-cerrar-sesion {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ff4444;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.1s;
+    font-size: 0.9rem;
+}
+.btn-cerrar-sesion:hover {
+    background-color: #cc0000;
+}
+
+/* ──────────────── RESPONSIVE ──────────────── */
+
+@media screen and (max-width: 30em) {
+  body {
+    font-size: 70%;
+  }
+
+  .navegacion-principal, a {
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+  }
+
+  .search {
+    width: 90%;
+    margin: 1em;
+  }
+
+  footer .footer-contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .curso-info {
+    flex-direction: column;
+  }
+
+  .cursos-disponibles {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  body {
+    font-size: 100%;
+  }
+
+  .navegacion-principal {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .search {
+    width: 60%;
+    margin: 0 2rem;
+  }
+
+  footer .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .curso-info {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .pasos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .pasos-grid {
+    grid-template-columns: 1fr;
+  }
+}

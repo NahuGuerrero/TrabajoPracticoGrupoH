@@ -1,0 +1,320 @@
+/* ──────────────── ESTRUCTURA GENERAL ──────────────── */
+
+main {
+  margin-top: 5.5rem;
+}
+
+/* ──────────────── HEADER / NAVEGACIÓN ──────────────── */
+
+.carrito {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 0.5rem;
+}
+
+.menu-derecha {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.carrito img {
+  width: 100%;
+  height: 100%;
+}
+
+.unidades {
+  position:absolute;
+  background: #d3d3d3;
+  color: black;
+  padding: 0 1em;
+  font-size: 1em;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+
+.unidades:hover {
+  transform: scale(1.2);
+}
+
+/* ──────────────── GIFT CARD PRINCIPAL ──────────────── */
+
+.giftcard-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 3%;
+  padding-top: 1.5%;
+  align-items: start;
+}
+
+.giftcard-preview {
+  text-align: center;
+}
+
+.giftcard {
+  width: 100%;
+  max-width: 31rem;
+  height: 15rem;
+  margin: 0 auto;
+  background-color: #ddd;
+  border-radius: 1em;
+  padding: 1.25em;
+  position: relative;
+}
+
+.giftcard-monto {
+  position: absolute;
+  background: black;
+  
+  color: white;
+  padding: 0.5em 0.5em;
+  font-size: 1em;
+  border-radius: 0.3em;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;      
+  line-height: normal; 
+  white-space: nowrap; 
+
+}
+
+
+.giftcard h2 {
+  margin-top: 2.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.preview-label {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* ──────────────── OPCIONES / CONFIGURACIÓN ──────────────── */
+
+.giftcard-options {
+  background: #f9f9f9;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.giftcard-options label {
+  display: block;
+  font-weight: bold;
+  margin: 15px 0 5px;
+}
+
+.giftcard-options input[type="text"],
+.giftcard-options input[type="number"],
+.giftcard-options select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.color-options,
+.font-options,
+.background-options {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+/* ──────────────── CONFIGURACIONES AVANZADAS ──────────────── */
+
+.configuracion {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.configuracion h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* ──────── UBICACIÓN ──────── */
+
+.opciones-ubicacion {
+  display: flex;
+  gap: 20px;
+}
+
+.opcion-ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.opcion-ubicacion label {
+  display: block;
+  width: 60px;
+  height: 40px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.opcion-ubicacion label::before {
+  content: "";
+  position: absolute;
+  background: gray;
+  width: 20px;
+  height: 10px;
+}
+
+.ubic-izquierda::before {
+  top: 5px;
+  left: 5px;
+}
+
+.ubic-derecha::before {
+  top: 5px;
+  right: 5px;
+}
+
+.ubic-arriba::before {
+  bottom: 5px;
+  left: 5px;
+}
+
+.opcion-ubicacion input[type="radio"] {
+  display: none;
+}
+
+.opcion-ubicacion input[type="radio"]:checked + label {
+  border-color: #333;
+}
+
+/* ──────── FONDO ──────── */
+
+.opciones-fondo {
+  display: flex;
+  gap: 15px;
+}
+
+.opcion-fondo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.opcion-fondo label {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.fondo-default {
+  background: gray;
+}
+
+.fondo-azul {
+  background: lightblue;
+}
+
+.fondo-rojo {
+  background: lightcoral;
+}
+
+.opcion-fondo input[type="radio"] {
+  display: none;
+}
+
+.opcion-fondo input[type="radio"]:checked + label {
+  border-color: #333;
+}
+
+/* ──────────────── BOTÓN CONFIRMAR ──────────────── */
+
+#confirmar {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+#confirmar:hover {
+  background: #555;
+}
+
+/* ──────────────── RESPONSIVE ──────────────── */
+
+@media screen and (max-width: 30em) {
+  .titulo {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .giftcard {
+    width: 90%;
+  }
+
+  .giftcard-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10em;
+  }
+
+  .contenedor-contacto h1 {
+    font-size: 2em;
+  }
+
+  .contenedor-contacto_principal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor-contacto_datos,
+  .contenedor-mensaje {
+    width: 90%;
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  body {
+    font-size: 100%;
+  }
+
+  .titulo {
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .giftcard-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+
+  .contenedor-contacto_principal {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .contenedor-contacto_datos,
+  .contenedor-mensaje {
+    width: 45%;
+    margin: 2rem;
+  }
+}

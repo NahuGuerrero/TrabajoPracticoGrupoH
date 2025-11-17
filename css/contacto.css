@@ -1,0 +1,199 @@
+/* ──────────────── HEADER / NAVEGACIÓN ──────────────── */
+
+.contenedor {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.menu-derecha {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.carrito {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 0.5rem;
+}
+
+.carrito img {
+  width: 100%;
+  height: 100%;
+}
+
+.unidades {
+  position:absolute;
+  background: #d3d3d3;
+  color: black;
+  padding: 0 1em;
+  font-size: 1em;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+
+.unidades:hover {
+  transform: scale(1.2);
+}
+
+/* ──────────────── SECCIÓN DE CONTACTO ──────────────── */
+
+.contenedor-contacto {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor-contacto h1 {
+  font-size: 5vw;
+}
+
+.contenedor-contacto_principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 6rem;
+}
+
+.contenedor-contacto_datos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  width: 15%;
+  height: 72%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.contenedor-mensaje {
+  margin-left: 0em;
+  margin-right: 10em;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+input,
+textarea {
+  width: 95%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.boton-enviar {
+  background-color: #007bff;
+  border-radius: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  width: 95%;
+}
+
+/* ──────────────── MODAL ÉXITO CONTACTO ──────────────── */
+.modal-exito {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-exito .modal-contenido {
+  background-color: #fff;
+  padding: 25px 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  animation: aparecer 0.4s ease;
+}
+
+.modal-exito h2 {
+  color: #0074d9;
+  margin-bottom: 10px;
+}
+
+.modal-exito button {
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal-exito button:hover {
+  background-color: #005fa3;
+}
+
+/* ──────────────── MAPA ──────────────── */
+
+.google-maps {
+  width: 100%;
+  height: 70vh;
+}
+
+/* ──────────────── RESPONSIVE ──────────────── */
+
+@media screen and (max-width: 30em) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .contenedor-contacto_principal {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenedor-contacto_datos {
+    margin: 1em;
+    align-items: center;
+    width: 70%;
+  }
+
+  .contenedor-mensaje {
+    width: 70%;
+    margin: 0;
+  }
+
+  input,
+  textarea {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .contenedor-contacto_principal {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .contenedor-contacto_datos,
+  .contenedor-mensaje {
+    width: 45%;
+    margin: 2rem;
+  }
+}
